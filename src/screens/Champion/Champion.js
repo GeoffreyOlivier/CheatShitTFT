@@ -305,6 +305,7 @@ const ListChampion = props => {
   return (
     <View style={styles.container}>
       <Image source={item.image[item.name]} style={styles.imageHere}/>
+      <Text style={styles.h1}>{item.name}</Text>
       {renderItemsA}
       {renderItemsB}
       {renderItemsC}
@@ -319,21 +320,28 @@ const styles = StyleSheet.create({
   },
   h1: {
     fontSize: 30,
-    fontWeight: 'bold'
+    margin: 10,
+    fontWeight: 'bold',
+    alignSelf: 'center'
   },
   imageHere: {
     width: '50%',
     height: '50%',
     justifyContent: 'flex-start',
-    alignSelf: 'flex-start'
+    alignSelf: 'center',
+    
   },
   item: {
     height: 50,
-    width: 50
+    width: 50,
+    margin: 5,
+    
   },
   list: {
     flex: 1,
-  flexDirection: 'row'
+  flexDirection: 'row',
+  margin: 10,
+  alignSelf: 'center',
   }
 
 })

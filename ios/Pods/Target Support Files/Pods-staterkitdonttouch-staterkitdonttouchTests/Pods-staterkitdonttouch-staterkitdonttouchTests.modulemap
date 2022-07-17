@@ -1,0 +1,6 @@
+module Pods_staterkitdonttouch_staterkitdonttouchTests {
+  umbrella header "Pods-staterkitdonttouch-staterkitdonttouchTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
